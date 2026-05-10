@@ -3,7 +3,28 @@
 import { useState } from "react";
 import { Plus, MoreHorizontal, MessageSquare, X, ChevronLeft, ChevronRight, Link2, Sparkles, RefreshCw, Calendar, Check } from "lucide-react";
 
-const columns = [
+interface Card {
+  id: number;
+  role: string;
+  name: string;
+  match?: string;
+  time?: string;
+  tags?: string[];
+  action?: string;
+  progress?: number;
+  assessments?: number;
+  priority?: boolean;
+  scheduled?: boolean;
+  meeting?: string;
+}
+
+interface Column {
+  title: string;
+  count: number;
+  cards: Card[];
+}
+
+const columns: Column[] = [
   {
     title: "Applied",
     count: 12,

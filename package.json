@@ -1,23 +1,50 @@
 {
-  "name": "talent-intel-backend",
+  "name": "talent-intel",
   "version": "2.0.0",
+  "private": true,
   "description": "Talent Intel — unified two-sided platform connecting students and employers through a shared skill graph and Trust Score (Neo4j)",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
-    "test": "node test.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "server": "node server.js",
+    "server:dev": "node --watch server.js"
   },
-  "keywords": ["career", "hiring", "trust-score", "skill-graph", "neo4j", "graph-database"],
+  "keywords": [
+    "career",
+    "hiring",
+    "trust-score",
+    "skill-graph",
+    "neo4j",
+    "graph-database"
+  ],
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.1",
     "express-validator": "^7.2.1",
     "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.460.0",
     "neo4j-driver": "^5.27.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
     "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.6",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
   }
 }
