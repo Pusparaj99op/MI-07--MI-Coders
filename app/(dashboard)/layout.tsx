@@ -25,10 +25,10 @@ export default function DashboardLayout({
             />
           </div>
           <div className="flex items-center gap-4">
-            <button className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-accent">
+            <button className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-accent transition-all duration-200 active:scale-90">
               <Bell className="h-5 w-5 text-muted-foreground" />
             </button>
-            <button className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-accent">
+            <button className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-accent transition-all duration-200 active:scale-90">
               <HelpCircle className="h-5 w-5 text-muted-foreground" />
             </button>
             <div className="h-9 w-9 overflow-hidden rounded-full border border-border">

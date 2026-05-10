@@ -56,7 +56,7 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setRoleOpen(!roleOpen)}
-                  className="w-full h-11 px-4 text-left bg-accent/50 border border-border rounded flex items-center justify-between text-sm"
+                  className="w-full h-11 px-4 text-left bg-accent/50 border border-border rounded flex items-center justify-between text-sm transition-all duration-200 hover:bg-accent active:scale-[0.98]"
                 >
                   {role}
                   <ChevronDown className="h-4 w-4 text-muted-foreground" />
@@ -71,7 +71,7 @@ export default function LoginPage() {
                           setRole(r);
                           setRoleOpen(false);
                         }}
-                        className="w-full px-4 py-2.5 text-left text-sm hover:bg-accent"
+                        className="w-full px-4 py-2.5 text-left text-sm transition-colors duration-150 hover:bg-accent"
                       >
                         {r}
                       </button>
@@ -101,7 +101,7 @@ export default function LoginPage() {
                 <label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                   Password
                 </label>
-                <button type="button" className="text-xs text-muted-foreground hover:text-foreground underline">
+                <button type="button" onClick={() => alert('Password reset coming soon!')} className="text-xs text-muted-foreground hover:text-primary underline transition-colors duration-200">
                   Forgot?
                 </button>
               </div>
@@ -115,7 +115,7 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-all duration-200 active:scale-90"
                 >
                   {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
                 </button>
@@ -139,7 +139,7 @@ export default function LoginPage() {
             {/* Submit */}
             <button
               type="submit"
-              className="w-full h-12 bg-primary text-primary-foreground rounded font-medium flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors"
+              className="w-full h-12 bg-primary text-primary-foreground rounded font-medium flex items-center justify-center gap-2 hover:bg-primary/90 hover:shadow-md transition-all duration-200 active:scale-[0.98]"
             >
               Continue
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -154,7 +154,7 @@ export default function LoginPage() {
           {/* Request Access */}
           <p className="text-center text-sm text-muted-foreground">
             New to the platform?{" "}
-            <button className="font-medium text-foreground hover:underline">
+            <button type="button" onClick={() => alert('Request Access coming soon!')} className="font-medium text-foreground hover:text-primary hover:underline transition-all duration-200 active:scale-95 inline-block">
               Request Access
             </button>
           </p>

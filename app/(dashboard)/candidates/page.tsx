@@ -100,7 +100,7 @@ export default function CandidatesPage() {
             Manage and review all candidate profiles.
           </p>
         </div>
-        <button className="h-10 px-4 bg-primary text-primary-foreground rounded text-sm font-medium flex items-center gap-2 hover:bg-primary/90">
+        <button onClick={() => alert('Add Candidate feature coming soon!')} className="h-10 px-4 bg-primary text-primary-foreground rounded text-sm font-medium flex items-center gap-2 hover:bg-primary/90">
           <Plus className="h-4 w-4" />
           Add Candidate
         </button>
@@ -118,7 +118,7 @@ export default function CandidatesPage() {
             className="h-10 w-full rounded border border-border bg-background pl-10 pr-4 text-sm outline-none focus:border-primary"
           />
         </div>
-        <button className="h-10 px-4 border border-border rounded text-sm flex items-center gap-2 hover:bg-accent">
+        <button onClick={() => alert('Filters coming soon!')} className="h-10 px-4 border border-border rounded text-sm flex items-center gap-2 hover:bg-accent">
           <Filter className="h-4 w-4" />
           Filters
         </button>
@@ -250,13 +250,13 @@ export default function CandidatesPage() {
 
               {/* Actions */}
               <div className="space-y-2">
-                <button className="w-full h-10 bg-primary text-primary-foreground rounded font-medium hover:bg-primary/90">
+                <button onClick={() => alert('View Full Profile coming soon!')} className="w-full h-10 bg-primary text-primary-foreground rounded font-medium hover:bg-primary/90">
                   View Full Profile
                 </button>
-                <button className="w-full h-10 border border-border rounded font-medium hover:bg-accent">
+                <button onClick={() => alert('Schedule Interview coming soon!')} className="w-full h-10 border border-border rounded font-medium hover:bg-accent">
                   Schedule Interview
                 </button>
-                <button className="w-full h-10 border border-border rounded font-medium hover:bg-accent">
+                <button onClick={() => alert('Send Message coming soon!')} className="w-full h-10 border border-border rounded font-medium hover:bg-accent">
                   Send Message
                 </button>
               </div>
