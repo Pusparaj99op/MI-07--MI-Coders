@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
 import "./globals.css";
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-});
 
 export const metadata: Metadata = {
   title: "TalentIntel - AI Recruitment Engine",
@@ -18,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${outfit.variable} bg-background`}>
+    <html lang="en" className="bg-background">
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
