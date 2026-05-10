@@ -1,30 +1,23 @@
 {
-  "name": "tmp-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "talent-intel-backend",
+  "version": "2.0.0",
+  "description": "Talent Intel — unified two-sided platform connecting students and employers through a shared skill graph and Trust Score (Neo4j)",
+  "main": "server.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test.js"
   },
+  "keywords": ["career", "hiring", "trust-score", "skill-graph", "neo4j", "graph-database"],
+  "license": "MIT",
   "dependencies": {
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.14.0",
-    "next": "^16.2.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "tailwind-merge": "^3.6.0",
-    "tailwindcss-animate": "^1.0.7"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.6",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "neo4j-driver": "^5.27.0",
+    "uuid": "^11.0.3"
   }
 }
